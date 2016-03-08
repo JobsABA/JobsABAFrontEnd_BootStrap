@@ -33,19 +33,19 @@ app.config(['$routeProvider', '$locationProvider', 'cfpLoadingBarProvider', func
         templateUrl: 'Template/ViewCompanyProfile.html',
         controller: 'BusinessDetailController'
     })
-    .when('/publishjob', {
-        templateUrl: 'Template/PublishedJob.html',
-        controller: 'JobsController'
-    })
-    .when('/createjob', {
-        templateUrl: 'Template/CreateJob.html',
-        controller: 'JobsController'
-    })
-    .when('/updateJob/:jobId', {
-        templateUrl: 'Template/CreateJob.html',
-        controller: 'JobsController'
-    })
-    .when('/jobDetail', {
+    //.when('/publishjob', {
+    //    templateUrl: 'Template/PublishedJob.html',
+    //    controller: 'JobsController'
+    //})
+    //.when('/createjob', {
+    //    templateUrl: 'Template/CreateJob.html',
+    //    controller: 'JobsController'
+    //})
+    //.when('/updateJob/:jobId', {
+    //    templateUrl: 'Template/CreateJob.html',
+    //    controller: 'JobsController'
+    //})
+    .when('/jobDetail/:JobID', {
         templateUrl: 'Template/JobDetail.html',
         controller: 'JobsController'
     })
@@ -77,6 +77,14 @@ app.config(['$routeProvider', '$locationProvider', 'cfpLoadingBarProvider', func
              templateUrl: 'Template/ChangePassword.html',
              controller: 'ChangePasswordController'
          })
+        .when('/privacyPolicy', {
+            templateUrl: 'Template/PrivacyPolicy.html',
+            controller: 'HomeController'
+        })
+        .when('/termsCondition', {
+            templateUrl: 'Template/TermsCondition.html',
+            controller: 'HomeController'
+        })
     .otherwise({
         redirectTo: '/home'
     });
@@ -95,7 +103,7 @@ app.config(['$routeProvider', '$locationProvider', 'cfpLoadingBarProvider', func
             $rootScope.previousPath = current.$$route.originalPath;
             $rootScope.previousPathParam = current.params.BusinessId;
         }
-
+        
         /* this line not working */
         var canceler = $q.defer();
         canceler.resolve();
@@ -114,7 +122,9 @@ app.config(['$routeProvider', '$locationProvider', 'cfpLoadingBarProvider', func
          else
              $rootScope.UserLogin = false;
          console.log($rootScope.UserLogin);
-
+         $("#navbar ul li").each(function () {
+             $(this).removeClass('activeMenu');
+         });
          //console.log('url has changed: ' + a);
          // show loading div, etc...
      });

@@ -980,6 +980,8 @@
     <Content Include="Assets\img\Add_Employee.png" />
     <Content Include="Assets\img\ApplicationView.png" />
     <Content Include="Assets\img\attention-exclamation-triangular-signal.png" />
+    <Content Include="Assets\img\BlogAds-Vertical.png" />
+    <Content Include="Assets\img\BlogAds.png" />
     <Content Include="Assets\img\Branches.png" />
     <Content Include="Assets\img\businessman.png" />
     <Content Include="Assets\img\calendar-tool.png" />
@@ -1422,9 +1424,11 @@
     <Content Include="Assets\styles\toastr.min.css" />
     <Content Include="index.html" />
     <Content Include="Template\Home.html" />
+    <Content Include="Template\PrivacyPolicy.html" />
     <Content Include="Template\PublishedJob.html" />
     <Content Include="Template\Register.html" />
     <Content Include="Template\SignIn.html" />
+    <Content Include="Template\TermsCondition.html" />
     <Content Include="Template\ViewCompanyProfile.html" />
     <Content Include="Web.config" />
   </ItemGroup>

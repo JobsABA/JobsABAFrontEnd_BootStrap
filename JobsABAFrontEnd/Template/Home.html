@@ -2,7 +2,7 @@
     <div class="row">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="item active">
+                <!--<div class="item active">
                     <img src="assets/img/slider_1920.png" style="width:100%" alt="First slide">
                     <div class="container">
                         <div class="carousel-caption">
@@ -10,13 +10,13 @@
                             <p>Aenean a rutrum nulla. Vestibulum a arcu at nisi tristique pretium.</p>
                         </div>
                     </div>
-                </div>
-                <div class="item">
+                </div>-->
+                <div class="item active">
                     <img src="assets/img/slider_19201.png" style="width:100%" data-src="" alt="Second    slide">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>JOBS IN ABA</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae egestas purus. </p>
+                            <p style="text-shadow: 1px 1px #FE5A00;">WORK WITH PURPOSE AND LOVE WHAT YOU DO</p>
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
         <div class="col-lg-12">
             <form class="form-inline">
                 <div class="form-group">
-                    <input type="text" class="form-control bussinessList" id="keyword" ng-model="searchjobModel.CompnayName" placeholder="Company Name"  ng-enter="searchJob()">
+                    <input type="text" class="form-control bussinessList" id="keyword" ng-model="searchjobModel.CompnayName" placeholder="Company Name" ng-enter="searchJob()">
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" id="keyword" ng-model="searchjobModel.KeyWord" placeholder="Keywords" ng-enter="searchJob()">
@@ -46,32 +46,32 @@
     <br /><br />
     <div class="row">
         <div class="col-lg-4">
-            <div class="hovereffect">
+            <div class="hovereffect" ng-click="redirectToABAService()">
                 <img src="assets/img/icon1.png">
-                <h1>Brand</h1>
+                <h1>BRAND</h1>
+                <h3>your business</h3>
                 <div class="overlay">
-                    <h3>Brand your business</h3><br /><br />    <br />
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                    <h4>Let everyone know who you are and why you serve the ABA and special needs communities.</h4>
                 </div>
             </div>
         </div>
         <div class="col-lg-4">
-            <div class="hovereffect">
+            <div class="hovereffect" ng-click="redirectToJobsInAba()">
                 <img src="assets/img/icon2.png">
-                <h1>Recruit</h1>
+                <h1>RECRUIT</h1>
+                <h3>team members</h3>
                 <div class="overlay">
-                    <h3>RECRUIT a brilliant team</h3><br /><br /><br />
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                    <h4>Connect your clients with skilled and caring individuals.</h4>
                 </div>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="hovereffect">
                 <img src="assets/img/icon3.png">
-                <h1>Educate</h1>
+                <h1>EDUCATE</h1>
+                <h3>to make a difference</h3>
                 <div class="overlay">
-                    <h3>EDUCATE families on your service offerings.</h3><br /><br /><br />
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                    <h4>Create opportunities for awareness and support.</h4>
                 </div>
             </div>
         </div>
@@ -99,7 +99,7 @@
     </div>
 
     <br /><br />
-    <div class="row" id="whyJobsDiv">
+    <!--<div class="row" id="whyJobsDiv">
         <div class="col-lg-12 text-center">
             <h3><span>WHY</span> Jobs In ABA</h3>
             <p>Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium Doloremque Laudantium,</p>
@@ -140,29 +140,29 @@
         </div>
     </div>
 
-    <br /><br />
-   
+    <br /><br />-->
+
     <div class="row" id="homePageJobDiv">
         <div class="col-lg-12 text-center">
             <a href="#jobsInAba"><h3>Recent job</h3></a>
         </div>
-        <hr style="clear:both"/>
+        <hr style="clear:both" />
         <div class="col-lg-12 jobDiv" ng-repeat="o in lstJobs | limitTo:8">
 
             <div class="hovereffect_job">
                 <div class="col-lg-3">
                     <img src="assets/img/no-image-company.png" ng-if="o.ImageExtension.length==0" class="img-responsive" height="150" width="200">
                     <img src="{{API_PATH}}/FileUpload/CompanyImage/{{o.BusinessID}}{{o.ImageExtension}}?d={{randomNumber}}" ng-if="o.ImageExtension.length>0" class="img-responsive" height="150" width="200">
-                    
+
                 </div>
                 <div class="col-lg-6" style="padding-left: 0;">
                     <div class="col-lg-12">
                         <div class="col-lg-10" style="padding-left: 0;">
                             <h4>
-                                {{o.Title}}
+                                <a href="#jobDetail/{{o.JobID}}">{{o.Title}}</a>
                             </h4>
                         </div>
-                        <div class="col-lg-2 text-right" >
+                        <div class="col-lg-2 text-right">
                             <a ng-if="UserLogin==false" href="#login" class="btn btn-blue" style="color:white">Apply</a>
                             <a ng-if="UserLogin==true && o.IsBusinessOwner!=1" href="javascript:void(0)" ng-click="applyJob(o.JobID)" class="" style="color:white">Apply</a>
                         </div>
@@ -186,12 +186,12 @@
                     <span><img src="assets/img/clock_offer.png" style="vertical-align:middle;margin-right:10px;" /><b>Last Date</b> : <span>{{o.EndDate}}</span></span>
                     <br /><br />
                     <div class="text-right">
-                        
+
                     </div>
                 </div>
                 <div class="overlay">
                     <h2>
-                        <a href="#viewcompanyprofile/{{o.BusinessID}}" style="color: white;text-transform:capitalize;">{{o.Name}}</a> 
+                        <a href="#viewcompanyprofile/{{o.BusinessID}}" style="color: white;text-transform:capitalize;">{{o.Name}}</a>
                     </h2>
                     <p class="icon-links">
                         <a href="#">
@@ -206,18 +206,15 @@
                     </p>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
     <br /><br />
-    <div class="row">
+    <!--<div class="row">
         <div class="col-lg-12">
             <h3 class="text-center">Testimonial</h3>
             <hr />
-            <!--<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <div class="previous_arrow" style="background: url('assets/img/about_back.png') no-repeat center; height: 45px; width: 26px;"></div>
-            </div>-->
             <div class="col-lg-12">
                 <ul class="text-center" style="height:300px;" id="about-slider" data-next="#about-us-wrapper .rectangle .next_arrow" data-cycle-carousel-slide-dimension=95% data-prev="#about-us-wrapper .rectangle .previous_arrow" data-cycle-fx=carousel data-cycle-timeout=3000 data-cycle-speed="1000" data-cycle-slides="> li" data-cycle-carousel-visible=2>
                     <li style=" width: 280px; padding: 0 20px;">
@@ -234,129 +231,11 @@
                     </li>
                 </ul>
             </div>
-            <!--<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <div class="next_arrow" style="background: url('assets/img/about_next.png') no-repeat center; height: 44px; width: 28px;"></div>
-            </div>-->
-
         </div>
     </div>
 
-    <br /><br />
-    <div class="row">
-        <div class="col-lg-12">
-            <h3 class="text-center">Advertising Packages</h3>
-            <hr />
-            <div class="col-lg-4">
-                <div class="advmainDiv">
-                    <div class="advHeader">
-                        <h3>Basic</h3>
-                    </div>
-                    <div class="advSubHeader">
-                        <p>$99 PER MONTH</p>
-                        <span>-</span>
-                        <p>$1089 PER YEAR</p>
-                        <p>(1 MONTH FREE!!!)*</p>
-                    </div>
-                    <div class="advEven" style="height: 130px;">
-                        <p>Manage your company’s profile page and advertise your mission, team, and hiring opportunities</p>
-                    </div>
-                    <div class="advOdd" style="height: 148px;">
-                        <p>Brand your company by advertising your logo on our service providers and job search directory pages</p>
-                    </div>
-                    <div class="advEven" style="height: 160px;">
-                        1 job post per month**<br />
-                        visible on our service provides page and listed on the job search directory page
-                    </div>
-                    <div class="addFooter">
-                        <button class="btn btn-orange">Buy Monthly</button>
-                        <button class="btn btn-orange">Buy Annual</button>
-                    </div>
-                </div>
+    <br /><br />-->
 
-            </div>
-            <div class="col-lg-4">
-                <div class="advmainDiv">
-                    <div class="advHeader">
-                        <h3>Premium</h3>
-                    </div>
-                    <div class="advSubHeader">
-                        <p>$249 PER MONTH </p>
-                        <span>-</span>
-                        <p>$2739 PER YEAR</p>
-                        <p>(1 MONTH FREE!!!)*</p>
-                    </div>
-                    <div class="advEven" style="height: 84px;">
-                        <p>Manage your company’s profile page and advertise your mission, team, and hiring opportunities</p>
-                    </div>
-                    <div class="advOdd" style="height: 130px;">
-                        <p>advertising Brand your company by your logo on our service providers and job search directory pages (300 x 300)</p>
-                    </div>
-                    <div class="advEven" style="height: 117px;">
-                        3 job posts per month**<br />
-                        visible on our service providers page and listed on the job search directory paget
-                    </div>
-                    <div class="advOdd" style="height: 108px;">
-                        <p>
-                            Submit conferences and events your company will be attending for distribution to all of our subscribers via email and social media platforms
-                        </p>
-                    </div>
-                    <div class="addFooter">
-                        <button class="btn btn-orange">Buy Monthly</button>
-                        <button class="btn btn-orange">Buy Annual</button>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-lg-4">
-                <div class="advmainDiv">
-                    <div class="advHeader">
-                        <h3>Deluxe</h3>
-                    </div>
-                    <div class="advSubHeader">
-                        <p>$499 PER MONTH </p>
-                        <span>-</span>
-                        <p>$5489 PER YEAR</p>
-                        <p>(1 MONTH FREE!!!)*</p>
-                    </div>
-                    <div class="advEven">
-                        <p>Manage your company’s profile page and advertise your mission, team, and hiring opportunities</p>
-                    </div>
-                    <div class="advOdd">
-                        <p>Brand your company by advertising your logo on our service provider and job search directory pages</p>
-                    </div>
-                    <div class="advEven">
-                        <p>
-                            Top advertising placement on our home, service providers, and job search directory pages and blog
-                        </p>
-                    </div>
-                    <div class="advOdd">
-                        5 job posts per month**<br />
-                        visible on our service providers page and listed on the job search directory page
-                    </div>
-                    <div class="advEven">
-                        <p>
-                            Submit conferences and events your company will be attending for distribution to all of our subscribers via email and social media platforms
-                        </p>
-                    </div>
-                    <div class="addFooter">
-                        <button class="btn btn-orange">Buy Monthly</button>
-                        <button class="btn btn-orange">Buy Annual</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <br /><br />
-    <div class="row">
-        <div class="col-lg-12" style="border: 1px solid gainsboro;padding: 10px;">
-            <p>
-                * Guarantee your advertising spot all year long by subscribing to a yearly package
-            </p>
-            <p>** Additional job postings are $49 per post, per month</p>
-        </div>
-    </div>
 
 </div>
 

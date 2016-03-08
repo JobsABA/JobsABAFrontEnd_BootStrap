@@ -128,8 +128,8 @@
 
             </div>
 
-            <div class="col-lg-4 col-md-4"  style="line-height:2;">
-                
+            <div class="col-lg-4 col-md-4" style="line-height:2;">
+
                 <div class="col-lg-12">
                     <h4 style="border-bottom: 1px solid gainsboro;"><img src="assets/img/Contact-details.png" class="iconImage" /> Contact Us</h4>
                 </div>
@@ -470,8 +470,7 @@
                                 {{$index+1}}.
                             </div>
                             <div class="col-lg-10">
-                                <a href="javascript:void(0)" class="jobapp">
-                                    <!-- ng-click="viewJobDetail(o.JobID)" -->
+                                <a href="#jobDetail/{{o.JobID}}" class="jobapp">
                                     <b>{{o.Title}}</b>
                                 </a>
                                 <span>({{o.StartDate}} - {{o.EndDate}})</span><br /><br />
