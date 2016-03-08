@@ -79,11 +79,11 @@ app.config(['$routeProvider', '$locationProvider', 'cfpLoadingBarProvider', func
          })
         .when('/privacyPolicy', {
             templateUrl: 'Template/PrivacyPolicy.html',
-            controller: 'HomeController'
+            controller: 'FooterMenuController'
         })
         .when('/termsCondition', {
             templateUrl: 'Template/TermsCondition.html',
-            controller: 'HomeController'
+            controller: 'FooterMenuController'
         })
     .otherwise({
         redirectTo: '/home'
@@ -122,9 +122,7 @@ app.config(['$routeProvider', '$locationProvider', 'cfpLoadingBarProvider', func
          else
              $rootScope.UserLogin = false;
          console.log($rootScope.UserLogin);
-         $("#navbar ul li").each(function () {
-             $(this).removeClass('activeMenu');
-         });
+         
          //console.log('url has changed: ' + a);
          // show loading div, etc...
      });
