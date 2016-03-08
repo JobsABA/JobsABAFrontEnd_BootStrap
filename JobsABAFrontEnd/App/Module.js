@@ -84,9 +84,9 @@ app.config(['$routeProvider', '$locationProvider', 'cfpLoadingBarProvider', func
 }])
 
 .run(function ($rootScope, $location, httpService, $q, $routeParams) {
-    //$rootScope.API_PATH = 'http://localhost:13177/';
+    $rootScope.API_PATH = 'http://localhost:13177/';
     //$rootScope.API_PATH = 'http://test.jobsinaba.com/';
-    $rootScope.API_PATH = 'http://edmx.jobsinaba.com/';
+    //$rootScope.API_PATH = 'http://edmx.jobsinaba.com/';
 
 
 

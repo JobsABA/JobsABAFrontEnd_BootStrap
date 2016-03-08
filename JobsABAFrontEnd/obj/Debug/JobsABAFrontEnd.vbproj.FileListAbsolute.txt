@@ -52,3 +52,12 @@ D:\Hardik Working\JobsABA_Working\JobsABA_Hardik_FrontEnd_Git - (add bootstrape)
 D:\Hardik Working\JobsABA_Working\JobsABA_Hardik_FrontEnd_Git - (add bootstrape)\JobsABAFrontEnd\obj\Debug\JobsABAFrontEnd.dll
 D:\Hardik Working\JobsABA_Working\JobsABA_Hardik_FrontEnd_Git - (add bootstrape)\JobsABAFrontEnd\obj\Debug\JobsABAFrontEnd.xml
 D:\Hardik Working\JobsABA_Working\JobsABA_Hardik_FrontEnd_Git - (add bootstrape)\JobsABAFrontEnd\obj\Debug\JobsABAFrontEnd.pdb
+D:\Hardik Working\JobsABA_Working\JobsABA_BootStrap_Front\JobsABAFrontEnd\bin\JobsABAFrontEnd.dll.config
+D:\Hardik Working\JobsABA_Working\JobsABA_BootStrap_Front\JobsABAFrontEnd\bin\JobsABAFrontEnd.dll
+D:\Hardik Working\JobsABA_Working\JobsABA_BootStrap_Front\JobsABAFrontEnd\bin\JobsABAFrontEnd.pdb
+D:\Hardik Working\JobsABA_Working\JobsABA_BootStrap_Front\JobsABAFrontEnd\bin\JobsABAFrontEnd.xml
+D:\Hardik Working\JobsABA_Working\JobsABA_BootStrap_Front\JobsABAFrontEnd\obj\Debug\JobsABAFrontEnd.Resources.resources
+D:\Hardik Working\JobsABA_Working\JobsABA_BootStrap_Front\JobsABAFrontEnd\obj\Debug\JobsABAFrontEnd.vbproj.GenerateResource.Cache
+D:\Hardik Working\JobsABA_Working\JobsABA_BootStrap_Front\JobsABAFrontEnd\obj\Debug\JobsABAFrontEnd.dll
+D:\Hardik Working\JobsABA_Working\JobsABA_BootStrap_Front\JobsABAFrontEnd\obj\Debug\JobsABAFrontEnd.xml
+D:\Hardik Working\JobsABA_Working\JobsABA_BootStrap_Front\JobsABAFrontEnd\obj\Debug\JobsABAFrontEnd.pdb
