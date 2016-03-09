@@ -81,6 +81,8 @@ a {
 .dropdown {
     position: relative;
     display: inline-block;
+    width: 20px;
+    text-align: center;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -139,7 +141,7 @@ a {
     overflow: hidden;
     position: relative;
     text-align: center;
-    cursor: default;
+    cursor: pointer;
     background-color: #F3F3F3;
     padding: 75px 0;
     height: 360px;
@@ -156,6 +158,7 @@ a {
         background-color: rgba(0,0,0,0.5);
         -webkit-transition: all .4s ease-in-out;
         transition: all .4s ease-in-out;
+        padding: 120px 0;
         color: white;
     }
 
@@ -164,6 +167,7 @@ a {
         position: relative;
         -webkit-transition: all .4s linear;
         transition: all .4s linear;
+        width: 115px;
     }
 
     .hovereffect h2 {
@@ -346,7 +350,7 @@ a {
         top: auto;
         bottom: 0;
         padding: 10px 1em;
-        height: 2.4em;
+        /*height: 2.4em;*/
         background: #EE5A37;
         color: #3c4a50;
         -webkit-transition: -webkit-transform 0.35s;
@@ -484,7 +488,7 @@ a {
         }
 
 #homePageJobDiv a {
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 /*Addvertise div*/
@@ -610,7 +614,24 @@ body {
     border: 2px solid red;
 }
 
-.blockUI.blockMsg img{
+.blockUI.blockMsg img {
     width: 40px;
     margin-top: -32px;
+}
+
+.activeMenu, .navbar-nav > li:hover {
+    /*background-color: #FE5A00;*/
+}
+
+    .activeMenu a, .navbar-nav > li:hover > a {
+        color: #ED5A38 !important;
+        border-bottom: 2px solid #ED5A38;
+    }
+
+hr {
+    clear: both;
+}
+
+.jobDetailRow {
+    margin-bottom: 10px;
 }

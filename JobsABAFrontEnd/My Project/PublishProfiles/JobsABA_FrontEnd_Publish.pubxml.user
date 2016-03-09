@@ -3267,14 +3267,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="App/Controller/CompanyProfileController.js">
       <publishTime>03/07/2016 16:25:26</publishTime>
     </File>
+    <File Include="App/Controller/footerMenuController.js">
+      <publishTime>03/08/2016 16:43:46</publishTime>
+    </File>
     <File Include="App/Controller/HomeController.js">
-      <publishTime>03/05/2016 18:29:53</publishTime>
+      <publishTime>03/08/2016 12:16:02</publishTime>
     </File>
     <File Include="App/Controller/IndexController.js">
       <publishTime>03/05/2016 18:38:39</publishTime>
     </File>
     <File Include="App/Controller/JobsController.js">
-      <publishTime>02/16/2016 18:32:26</publishTime>
+      <publishTime>03/08/2016 15:41:50</publishTime>
     </File>
     <File Include="App/Controller/JobsInABAListController.js">
       <publishTime>03/05/2016 18:41:19</publishTime>
@@ -3292,7 +3295,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/07/2016 16:36:36</publishTime>
     </File>
     <File Include="App/Module.js">
-      <publishTime>03/07/2016 19:04:30</publishTime>
+      <publishTime>03/08/2016 19:52:48</publishTime>
     </File>
     <File Include="App/Services.js">
       <publishTime>03/05/2016 18:52:11</publishTime>
@@ -3316,7 +3319,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/16/2016 13:56:46</publishTime>
     </File>
     <File Include="Assets/bootstrap/css/Custom.css">
-      <publishTime>03/07/2016 19:19:07</publishTime>
+      <publishTime>03/08/2016 19:51:11</publishTime>
     </File>
     <File Include="Assets/bootstrap/css/font-awesome.min.css">
       <publishTime>03/03/2016 15:01:35</publishTime>
@@ -3380,6 +3383,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Assets/img/attention-exclamation-triangular-signal.png">
       <publishTime>02/16/2016 22:09:24</publishTime>
+    </File>
+    <File Include="Assets/img/BlogAds-Vertical.png">
+      <publishTime>03/08/2016 14:35:55</publishTime>
+    </File>
+    <File Include="Assets/img/BlogAds.png">
+      <publishTime>03/08/2016 14:35:55</publishTime>
     </File>
     <File Include="Assets/img/blog_facebook.png">
       <publishTime>02/16/2016 13:56:46</publishTime>
@@ -3544,13 +3553,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/16/2016 22:09:24</publishTime>
     </File>
     <File Include="Assets/img/icon1.png">
-      <publishTime>02/16/2016 13:56:46</publishTime>
+      <publishTime>03/08/2016 14:35:56</publishTime>
     </File>
     <File Include="Assets/img/icon2.png">
-      <publishTime>02/16/2016 13:56:46</publishTime>
+      <publishTime>03/08/2016 14:35:57</publishTime>
     </File>
     <File Include="Assets/img/icon3.png">
-      <publishTime>02/16/2016 13:56:46</publishTime>
+      <publishTime>03/08/2016 14:35:53</publishTime>
     </File>
     <File Include="Assets/img/icon_form.png">
       <publishTime>02/16/2016 13:56:46</publishTime>
@@ -3730,10 +3739,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/16/2016 13:56:46</publishTime>
     </File>
     <File Include="Assets/img/Signin.png">
-      <publishTime>03/07/2016 19:12:47</publishTime>
+      <publishTime>03/08/2016 14:35:55</publishTime>
     </File>
     <File Include="Assets/img/SignUP.png">
-      <publishTime>03/07/2016 19:12:47</publishTime>
+      <publishTime>03/08/2016 14:35:55</publishTime>
     </File>
     <File Include="Assets/img/Skill.png">
       <publishTime>02/20/2016 09:20:42</publishTime>
@@ -4012,16 +4021,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/16/2016 13:56:47</publishTime>
     </File>
     <File Include="bin/JobsABAFrontEnd.dll">
-      <publishTime>03/07/2016 21:33:23</publishTime>
+      <publishTime>03/09/2016 20:00:02</publishTime>
     </File>
     <File Include="bin/JobsABAFrontEnd.xml">
-      <publishTime>03/07/2016 21:33:23</publishTime>
+      <publishTime>03/09/2016 20:00:02</publishTime>
     </File>
     <File Include="index.html">
-      <publishTime>03/07/2016 19:12:22</publishTime>
+      <publishTime>03/08/2016 16:20:35</publishTime>
     </File>
     <File Include="Template/ABAServiceProvide.html">
-      <publishTime>03/07/2016 11:47:34</publishTime>
+      <publishTime>03/08/2016 16:13:42</publishTime>
     </File>
     <File Include="Template/AdPackageList.html">
       <publishTime>02/16/2016 14:41:31</publishTime>
@@ -4030,25 +4039,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/26/2016 20:12:44</publishTime>
     </File>
     <File Include="Template/BlogList.html">
-      <publishTime>03/04/2016 14:50:48</publishTime>
+      <publishTime>03/08/2016 14:42:09</publishTime>
     </File>
     <File Include="Template/ChangePassword.html">
-      <publishTime>03/07/2016 19:07:07</publishTime>
+      <publishTime>03/08/2016 11:58:29</publishTime>
     </File>
     <File Include="Template/CompanyProfile.html">
-      <publishTime>03/07/2016 16:21:25</publishTime>
+      <publishTime>03/08/2016 11:55:36</publishTime>
     </File>
     <File Include="Template/CreateJob.html">
       <publishTime>02/16/2016 14:49:03</publishTime>
     </File>
     <File Include="Template/Home.html">
-      <publishTime>03/07/2016 11:38:07</publishTime>
+      <publishTime>03/08/2016 20:08:21</publishTime>
     </File>
     <File Include="Template/JobDetail.html">
-      <publishTime>02/16/2016 18:35:21</publishTime>
+      <publishTime>03/08/2016 20:17:40</publishTime>
     </File>
     <File Include="Template/JobsInABAList.html">
-      <publishTime>03/07/2016 11:41:47</publishTime>
+      <publishTime>03/08/2016 16:38:22</publishTime>
     </File>
     <File Include="Template/OrderList.html">
       <publishTime>02/16/2016 14:51:13</publishTime>
@@ -4056,20 +4065,26 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Template/PersonProfile.html">
       <publishTime>03/07/2016 15:48:14</publishTime>
     </File>
+    <File Include="Template/PrivacyPolicy.html">
+      <publishTime>03/08/2016 13:56:14</publishTime>
+    </File>
     <File Include="Template/PublishedJob.html">
       <publishTime>02/16/2016 14:54:27</publishTime>
     </File>
     <File Include="Template/Register.html">
-      <publishTime>03/07/2016 19:36:32</publishTime>
+      <publishTime>03/08/2016 12:39:52</publishTime>
     </File>
     <File Include="Template/SignIn.html">
       <publishTime>03/07/2016 19:34:47</publishTime>
     </File>
+    <File Include="Template/TermsCondition.html">
+      <publishTime>03/08/2016 13:57:08</publishTime>
+    </File>
     <File Include="Template/ViewCompanyProfile.html">
-      <publishTime>03/07/2016 19:09:59</publishTime>
+      <publishTime>03/08/2016 15:47:44</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/07/2016 21:33:40</publishTime>
+      <publishTime>03/08/2016 19:53:07</publishTime>
     </File>
   </ItemGroup>
 </Project>

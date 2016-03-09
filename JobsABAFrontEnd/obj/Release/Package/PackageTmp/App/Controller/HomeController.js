@@ -22,5 +22,14 @@
     $scope.displayJobFullDetail = function (id) {
         $scope["fullJobDetail_" + id] = true;
     }
+
+    $scope.redirectToABAService = function () {
+        $location.path('/abaServiceProvide');
+    }
+
+    $scope.redirectToJobsInAba = function () {
+        $location.path('/jobsInAba');
+    }
+
     $scope.init();
 });

@@ -1,10 +1,11 @@
-﻿app.controller('JobsController', function ($scope, httpService, $http, $routeParams, $rootScope) {
+﻿app.controller('JobsController', function ($scope, httpService, $http, $routeParams, $rootScope, $filter) {
     $scope.init = function () {
         $scope.initModel();
         //$scope.getJobList();
-        $scope.jobId = parseInt($routeParams.jobId);
+        $scope.jobId = parseInt($routeParams.JobID);
         if ($scope.jobId != undefined)
             $scope.getJobDetailById($scope.jobId);
+        $scope.randomNumber = Math.random();
     }
 
     $scope.initModel = function () {
@@ -31,38 +32,24 @@
     //}
 
     $scope.getJobDetailById = function (id) {
-        $scope.isEditMode = true;
-        $scope.jobsModel.JobID = id;
-        $http.get($rootScope.API_PATH + "/Api/Jobs/GetJob/" + id).then(function (data) {
-            console.log(data);
+        var params = {
+            jobID: id
+        }
+        $("#jobDetailMain").block({ message: '<img src="Assets/img/loader.gif" />' });
+        $http.get($rootScope.API_PATH + "/Jobapplication/getJobDetailById/", { params: params }).then(function (data) {
+            if (data.data.message.StartDate != null) {
+                data.data.message.StartDate = $filter('date')(data.data.message.StartDate.substr(6, 13), "MM-dd-yyyy");
+            }
+            if (data.data.message.EndDate != null) {
+                data.data.message.EndDate = $filter('date')(data.data.message.EndDate.substr(6, 13), "MM-dd-yyyy");
+            }
+            $scope.objJobDetail = data.data.message;
+            console.log($scope.objJobDetail)
+            $("#jobDetailMain").unblock();
         }, function (data) {
-            //alert("error" + data);
+            $("#jobDetailMain").unblock();
         });
     }
-
-    //$scope.createJob = function (obj) {
-    //    var addJobsResult = httpService.post(obj, $rootScope.API_PATH + "/Jobapplication/CreateJob");
-    //    addJobsResult.then(function (pl) {
-    //        alert("Success");
-    //    }, function (errorPl) {
-    //        //alert("Error");
-    //    });
-    //}
-
-    //$scope.updateJob = function (obj) {
-    //    obj.JobID = $scope.jobsModel.JobID
-    //    console.log(obj);
-    //    var params = {
-    //        id: obj.JobID
-    //    }
-    //    $http.put($rootScope.API_PATH + "/Api/Jobs/PutJob", obj, { params: params }).success(function (data) {
-    //        alert("success");
-    //    }).error(function (data) {
-    //        //alert("error" + JSON.stringify(data));
-    //    });
-    //}
-
-    
 
     $scope.init();
 
